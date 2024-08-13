@@ -8,7 +8,8 @@
 		"vscode": {
 			"extensions": [
 				"monokai.theme-monokai-pro-vscode",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				// "esbenp.prettier-vscode"
 			]
 		}
 	}
