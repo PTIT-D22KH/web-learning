@@ -156,25 +156,73 @@
 
 
 
-const age = 18;
-if (age === 18) {
-    console.log("You just became an adult :D (strict)");
-}
-if (age == 18) {
-    console.log("You just became an adult :D (loose");
-}
-console.log('18' == 18);
-console.log('18' === 18);
+// const age = 18;
+// if (age === 18) {
+//     console.log("You just became an adult :D (strict)");
+// }
+// if (age == 18) {
+//     console.log("You just became an adult :D (loose");
+// }
+// console.log('18' == 18);
+// console.log('18' === 18);
 
-const favorite = Number(prompt("What's your favorite number?"));
-console.log(favorite);
-console.log(typeof favorite);
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
 
 
-if (favorite === 23) {
-    console.log("Cool! 23 is an amazing number!");
-} else if (favorite === 7) {
-    console.log("7 is also a cool number");
-} else {
-    console.log("Number is not 23 or 7");
-}
+// if (favorite === 23) {
+//     console.log("Cool! 23 is an amazing number!");
+// } else if (favorite === 7) {
+//     console.log("7 is also a cool number");
+// } else {
+//     console.log("Number is not 23 or 7");
+// }
+// if (favorite !== 23) {
+//     console.log("Why not 23?");
+// }
+
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (shouldDrive) {
+//     console.log("Sarah is able to drive");
+// } else {
+//     console.log("Someone else should drive");
+// }
+
+// const isTired = true;
+// console.log(hasDriversLicense || hasGoodVision || isTired);
+
+
+// const day = 'monday';
+
+// switch (day) {
+//     case 'monday': // day === 'monday'
+//         console.log("Plan course structures");
+//         console.log("Go to coding meetup");
+//         break;
+//     case 'tuesday':
+//         console.log("Prepare theory videos");
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log("Write code examples");
+//         break;
+//     case 'friday':
+//         console.log("Record videos");
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log("Enjoy the weekend :D");
+//         break;
+//     default:
+//         console.log("Not a valid day!");
+
+// }
+
+
