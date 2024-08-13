@@ -92,35 +92,72 @@
 // console.log(ages);
 
 
-const friends = ['Michael', 'Steven', 'Peter'];
-friends.push('Jay');
-console.log(friends);
+// const friends = ['Michael', 'Steven', 'Peter'];
+// friends.push('Jay');
+// console.log(friends);
 
-const newLength = friends.push("Duong");
-console.log(newLength);
+// const newLength = friends.push("Duong");
+// console.log(newLength);
 
-friends.unshift("John");//add at the beginning
-console.log(friends);
+// friends.unshift("John");//add at the beginning
+// console.log(friends);
 
 
 
 //remove elements
-friends.pop();
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+// friends.pop();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
 
 
-friends.shift();//remove first element
-console.log(friends);
+// friends.shift();//remove first element
+// console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('dfasdfas'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('dfasdfas'));
 
 
-console.log(friends.includes('Steven'));
-console.log(friends.includes('dfasdfas'));
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('dfasdfas'));
 
-friends.push(23);
-console.log(friends.includes('23'));// using ==== (strict equality)
+// friends.push(23);
+// console.log(friends.includes('23'));// using ==== (strict equality)
 
+
+const jonasArray = [
+    'Jonas',
+    'Duong',
+    2024 - 2004,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Duong',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// console.log(jonans.'last' + nameKey);// can not do
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} and his best friend is called ${jonas.friends[0]}`);
