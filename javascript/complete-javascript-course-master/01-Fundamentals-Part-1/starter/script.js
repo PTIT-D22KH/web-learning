@@ -104,26 +104,77 @@
 
 
 //type conversion
-const inputYear = '1991';
-console.log(Number(inputYear), inputYear);
-console.log(inputYear + 18);
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+// console.log(inputYear + 18);
 
-console.log(Number('Jonas'));
-console.log(typeof NaN); //NaN is an invalid number so typeof NaN is still number
-console.log(String(23), 23);
-//type coercion
-console.log("I am " + 23 + " years old");
-console.log("I am " + '23' + " years old");
-console.log("I am " + String(23) + " years old");
-console.log('23' - '10' - 3);
-console.log('23' + '10' + 3);
-console.log('23' * '2');
-console.log('23' / '2');
+// console.log(Number('Jonas'));
+// console.log(typeof NaN); //NaN is an invalid number so typeof NaN is still number
+// console.log(String(23), 23);
+// //type coercion
+// console.log("I am " + 23 + " years old");
+// console.log("I am " + '23' + " years old");
+// console.log("I am " + String(23) + " years old");
+// console.log('23' - '10' - 3);
+// console.log('23' + '10' + 3);
+// console.log('23' * '2');
+// console.log('23' / '2');
 
 
-let n = '1' + 1;
-n = n - 1;
-console.log(n)
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n)
 
-let m = '10' - '4' - '3' - 2 + '5'
-console.log(m);
+// let m = '10' - '4' - '3' - 2 + '5'
+// console.log(m);
+
+
+
+// 5 falsy values: 0, null, NaN, '', undefined
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(''));
+// console.log(Boolean({}));
+// console.log(Boolean(NaN));
+
+
+// const money = 100;
+// if (money) {
+//     console.log("Don't spend it all ;)");
+
+// } else {
+//     console.log("You should get a job!");
+// }
+
+// let height;
+// console.log(height);
+// if (height) {
+//     console.log("YAY! Height is defined");
+// } else {
+//     console.log("Height is UNDEFINED");
+// }
+
+
+
+const age = 18;
+if (age === 18) {
+    console.log("You just became an adult :D (strict)");
+}
+if (age == 18) {
+    console.log("You just became an adult :D (loose");
+}
+console.log('18' == 18);
+console.log('18' === 18);
+
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+
+if (favorite === 23) {
+    console.log("Cool! 23 is an amazing number!");
+} else if (favorite === 7) {
+    console.log("7 is also a cool number");
+} else {
+    console.log("Number is not 23 or 7");
+}
